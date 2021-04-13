@@ -24,14 +24,14 @@ export const Header = ({ siteTitle, siteDescription }) => {
                         </Box>
                     </Box>
                     <Button
-                            onClick={
-                                () => {
-                                    setColorMode(colorMode === 'default' ? 'dark' : 'default');
-                                }
+                        onClick={
+                            (e) => {
+                                setColorMode(colorMode === 'default' ? 'dark' : 'default');
                             }
-                        >
-                            {colorMode === 'default' ? 'Dark' : 'Light'}
-                        </Button>
+                        }
+                    >
+                        {colorMode === 'default' ? 'Dark' : 'Light'}
+                    </Button>
                 </Flex>
             </Box>
         </Box>
